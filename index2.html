@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta: ¿Cuál será tu regalo?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .contenedor {
+            background: linear-gradient(45deg, red, black);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .opciones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .opcion {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-decoration: none; /* Elimina el subrayado */
+        }
+
+        .opcion:hover {
+            background-color: rgb(238, 255, 0);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .contenedor {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .opcion {
+                font-size: 1rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¿Cuál será tu regalo?</h1>
+        <div class="opciones">
+            <a href="index3.html" class="opcion">BICICLETA</a>
+            <a href="index3.html" class="opcion">IPHONE</a>
+            <a href="index3.html" class="opcion">ORDENADOR</a>
+            <a href="index3.html" class="opcion">ESCRITORIO</a>
+            <a href="index3.html" class="opcion">MOTO</a>
+            <a href="index3.html" class="opcion">VIAJE</a>
+            <a href="index3.html" class="opcion">MACBOOK</a>
+            <a href="index3.html" class="opcion">IPAD</a>
+            <a href="index3.html" class="opcion">AIRPODS</a>
+            <a href="index3.html" class="opcion">MOTO DE AGUA</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Hay Regalo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Cambié 'center' a 'flex-start' */
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            position: relative;
+        }
+
+        .contenedor-imagen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/REGALO.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: red;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.6), 0 0 30px rgba(255, 0, 0, 0.5);
+            z-index: 1;
+            margin-top: 20px; /* Ajusta este valor según cuánto desees mover el texto */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+                margin-top: 10px; /* Ajuste en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-imagen"></div>
+    <h1>NO HAY REGALO CHEIRAS A CU</h1>
+</body>
+</html>
